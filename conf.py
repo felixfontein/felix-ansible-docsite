@@ -4,8 +4,6 @@
 # list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
-import sphinx_ansible_theme
-
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -32,7 +30,7 @@ html_short_title = 'Ansible Collections Documentation'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx_ansible_theme.ext.pygments_lexer', 'notfound.extension']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'ansible_basic_sphinx_ext', 'notfound.extension']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -86,12 +84,9 @@ display_version = False
 html_theme_options = {
 }
 
-html_context = {
-    'css_files': (
-        # overrides to the standard theme
-        '_static/ansible.css',
-    ),
-}
+html_css_files = [
+    'ansible.css',
+]
 
 html_use_smartypants = True
 html_use_modindex = False

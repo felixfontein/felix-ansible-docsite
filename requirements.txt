@@ -1,1 +1,1 @@
-ansible-sphinx-theme
+ansible-basic-sphinx-ext
