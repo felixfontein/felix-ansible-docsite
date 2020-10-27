@@ -8,11 +8,12 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = rst
 BUILDDIR      = build
 
-COLLECTION_LIMIT = --limit felixfontein.tools --limit felixfontein.hosttech_dns --limit community.sops --limit community.crypto
+COLLECTION_LIMIT = --limit felixfontein.tools --limit felixfontein.hosttech_dns --limit community.sops --limit community.crypto --limit community.routeros
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" -c . $(SPHINXOPTS) $(O)
+	@echo -e 'Additional targets: \x1B[97mbuild_modules\x1B[0m, \x1B[97mhtml_complete\x1B[0m'
 
 build_modules:
 	rm -rf temp-rst
