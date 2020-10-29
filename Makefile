@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = rst
 BUILDDIR      = build
 
-COLLECTION_LIMIT = --limit felixfontein.tools --limit felixfontein.hosttech_dns --limit community.sops --limit community.crypto --limit community.routeros
+COLLECTION_LIMIT = --limit felixfontein.tools --limit felixfontein.hosttech_dns --limit community.sops --limit community.crypto --limit community.routeros --limit community.docker
 
 # Put it first so that "make" without argument is like "make help".
 help:
