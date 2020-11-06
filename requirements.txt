@@ -1,1 +1,1 @@
-ansible-basic-sphinx-ext
+antsibull

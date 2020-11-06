@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = rst
 BUILDDIR      = build
 
-COLLECTION_LIMIT = --limit felixfontein.tools --limit felixfontein.hosttech_dns --limit community.sops --limit community.crypto --limit community.routeros --limit community.docker
+COLLECTIONS   = felixfontein.tools felixfontein.hosttech_dns community.sops community.crypto community.routeros community.docker
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -18,7 +18,7 @@ help:
 build_modules:
 	rm -rf temp-rst
 	mkdir -p temp-rst
-	antsibull-docs current --dest-dir temp-rst $(COLLECTION_LIMIT)
+	antsibull-docs collection --use-current --dest-dir temp-rst $(COLLECTIONS)
 	rsync -avc --delete-after temp-rst/collections/ rst/collections/
 
 html_complete: build_modules html
