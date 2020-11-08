@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = rst
 BUILDDIR      = build
 
-COLLECTIONS   = felixfontein.tools felixfontein.hosttech_dns community.sops community.crypto community.routeros community.docker
+COLLECTIONS   = felixfontein.acme felixfontein.tools felixfontein.hosttech_dns community.sops community.crypto community.routeros community.docker
 
 # Put it first so that "make" without argument is like "make help".
 help:
