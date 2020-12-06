@@ -18,8 +18,7 @@ The source of this page can be found `here <https://github.com/felixfontein/feli
 .. toctree::
    :maxdepth: 1
    :caption: Plugin indexes:
+   :glob:
 
-   collections/index_lookup
-   collections/index_module
-   collections/index_vars
+   collections/index_*
 
