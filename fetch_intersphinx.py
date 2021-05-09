@@ -8,5 +8,5 @@ import conf
 for name, (url, (_, cache_name)) in conf.intersphinx_mapping.items():
     source = url + 'objects.inv'
     destination = os.path.normpath(os.path.join('rst', cache_name))
-    print('# {name}:'.format(name=name))
-    print('curl {src} --output {dst}'.format(src=source, dst=destination))
+    # print('# {name}:'.format(name=name))
+    print('curl {src} -L --output {dst}'.format(src=source, dst=destination))
