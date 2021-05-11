@@ -14,11 +14,14 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import datetime
+
+year = datetime.date.today().year
 
 # -- Project information -----------------------------------------------------
 
 project = 'Ansible collections'
-copyright = '2020, Felix Fontein'
+copyright = f'2020—{year}, Felix Fontein'
 author = 'Felix Fontein'
 version = ''
 
