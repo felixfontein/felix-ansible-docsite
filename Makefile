@@ -19,7 +19,7 @@ build_modules:
 	rm -rf temp-rst
 	mkdir -p temp-rst
 	antsibull-docs collection --use-current --dest-dir temp-rst $(COLLECTIONS)
-	rsync -avc --delete-after temp-rst/collections/ rst/collections/
+	rsync -cprv --delete-after temp-rst/collections/ rst/collections/
 
 html_complete: build_modules html
 	#
