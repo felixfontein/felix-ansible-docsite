@@ -22,3 +22,9 @@ The source of this page can be found `here <https://github.com/felixfontein/feli
 
    collections/index_*
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Reference indexes:
+
+   collections/environment_variables
