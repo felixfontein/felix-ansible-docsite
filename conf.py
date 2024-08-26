@@ -27,7 +27,6 @@ version = ''
 
 html_short_title = 'Ansible Collections Documentation'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be

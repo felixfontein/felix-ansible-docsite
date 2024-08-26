@@ -16,10 +16,7 @@ help:
 	@echo -e 'Additional targets: \x1B[97mbuild_modules\x1B[0m, \x1B[97mhtml_complete\x1B[0m'
 
 build_modules:
-	rm -rf temp-rst
-	mkdir -p temp-rst
-	antsibull-docs collection --use-current --dest-dir temp-rst $(COLLECTIONS)
-	rsync -cprv --delete-after temp-rst/collections/ rst/collections/
+	antsibull-docs collection --use-current --dest-dir rst --cleanup everything $(COLLECTIONS)
 
 html_complete: build_modules html
 	#
